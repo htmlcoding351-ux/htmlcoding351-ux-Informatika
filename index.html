@@ -6,23 +6,25 @@
 <title>Informatika Kelas 7</title>
 
 <style>
+
 *{
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:Segoe UI,sans-serif;
+font-family:'Segoe UI',sans-serif;
 }
 
 body{
 background:#0f172a;
-color:white;
-line-height:1.6;
+color:#fff;
+line-height:1.7;
 }
 
 header{
 background:#1e293b;
 padding:30px;
 text-align:center;
+box-shadow:0 0 20px rgba(0,0,0,.4);
 }
 
 .logo{
@@ -32,49 +34,113 @@ margin:auto;
 display:block;
 }
 
-.card{
-background:#1e293b;
-margin:20px;
-padding:20px;
-border-radius:15px;
+h1{
+color:#38bdf8;
+margin-top:10px;
 }
 
-h1,h2,h3{
+.container{
+max-width:1200px;
+margin:auto;
+padding:20px;
+}
+
+.card{
+background:#1e293b;
+padding:25px;
+border-radius:18px;
+margin-bottom:20px;
+box-shadow:0 0 15px rgba(0,0,0,.3);
+}
+
+h2{
 color:#38bdf8;
 margin-bottom:10px;
+}
+
+h3{
+color:#7dd3fc;
+margin-top:15px;
+}
+
+ul{
+padding-left:20px;
 }
 
 table{
 width:100%;
 border-collapse:collapse;
-margin-top:10px;
+margin-top:15px;
 }
 
 table,th,td{
 border:1px solid #38bdf8;
-padding:10px;
 }
 
-button{
-background:#0ea5e9;
-color:white;
-border:none;
-padding:12px 20px;
-border-radius:10px;
+th,td{
+padding:10px;
+text-align:center;
+}
+
+.quiz-question{
+background:#243554;
+padding:15px;
+margin:15px 0;
+border-radius:12px;
+border-left:5px solid #38bdf8;
+}
+
+.quiz-option{
+display:block;
+padding:10px;
+margin-top:5px;
+border-radius:8px;
 cursor:pointer;
-margin-top:20px;
+transition:.3s;
+}
+
+.quiz-option:hover{
+background:#334155;
+}
+
+.quiz-option input{
+margin-right:10px;
 }
 
 input[type=text]{
-padding:8px;
-margin:5px;
-width:250px;
+padding:10px;
+width:260px;
+border:none;
+border-radius:8px;
+margin-top:5px;
+}
+
+button{
+width:100%;
+padding:15px;
+background:#0ea5e9;
+color:white;
+border:none;
+border-radius:10px;
+font-size:18px;
+font-weight:bold;
+cursor:pointer;
+}
+
+button:hover{
+background:#0284c7;
 }
 
 #hasil{
-font-size:24px;
 margin-top:20px;
+padding:20px;
+background:#243554;
+border-radius:12px;
+text-align:center;
+font-size:22px;
+font-weight:bold;
 }
+
 </style>
 </head>
 
@@ -89,42 +155,55 @@ margin-top:20px;
 </svg>
 
 <h1>MEDIA PEMBELAJARAN INFORMATIKA KELAS VII</h1>
-<p>Hardware, Software, Brainware, Utility Software, Scratch dan Sistem Operasi</p>
+
+<p>
+Hardware • Software • Brainware • Utility Software • Scratch • Sistem Operasi
+</p>
 
 </header>
+
+<div class="container">
 
 <div class="card">
 
 <h2>Hardware</h2>
 
 <p>
-Hardware adalah perangkat keras komputer yang dapat dilihat dan disentuh secara fisik.
-Hardware berfungsi untuk menerima input, memproses data, menyimpan data dan menampilkan hasil.
-Contohnya keyboard, mouse, monitor, printer, RAM, motherboard dan harddisk.
+Hardware adalah perangkat keras komputer yang dapat dilihat dan disentuh secara fisik. Hardware berfungsi sebagai alat input, proses, penyimpanan dan output data.
 </p>
 
-<h3>Jenis Hardware</h3>
+<h3>Contoh Hardware</h3>
 
 <ul>
-<li>Input Device</li>
-<li>Output Device</li>
-<li>Processing Device</li>
-<li>Storage Device</li>
+<li>Keyboard</li>
+<li>Mouse</li>
+<li>Monitor</li>
+<li>Printer</li>
+<li>RAM</li>
+<li>Motherboard</li>
+<li>Harddisk</li>
 </ul>
 
 <h2>Software</h2>
 
 <p>
-Software adalah perangkat lunak berupa kumpulan instruksi yang digunakan untuk menjalankan komputer.
-Software tidak dapat disentuh secara fisik.
-Contohnya Windows, Linux, Android, Microsoft Word dan Google Chrome.
+Software adalah perangkat lunak berupa kumpulan instruksi yang digunakan untuk menjalankan komputer. Software tidak mempunyai bentuk fisik.
 </p>
+
+<h3>Contoh Software</h3>
+
+<ul>
+<li>Windows</li>
+<li>Linux</li>
+<li>Android</li>
+<li>Microsoft Word</li>
+<li>Google Chrome</li>
+</ul>
 
 <h2>Brainware</h2>
 
 <p>
 Brainware adalah manusia yang menggunakan atau mengelola sistem komputer.
-Tanpa brainware, hardware dan software tidak dapat dimanfaatkan secara maksimal.
 </p>
 
 <ul>
@@ -152,9 +231,9 @@ Tanpa brainware, hardware dan software tidak dapat dimanfaatkan secara maksimal.
 </tr>
 
 <tr>
-<td>Dapat Disentuh</td>
-<td>Tidak Berwujud</td>
-<td>Pengguna Sistem</td>
+<td>Dapat disentuh</td>
+<td>Tidak berwujud</td>
+<td>Pengguna sistem</td>
 </tr>
 
 </table>
@@ -162,7 +241,7 @@ Tanpa brainware, hardware dan software tidak dapat dimanfaatkan secara maksimal.
 <h2>Utility Software</h2>
 
 <p>
-Utility Software adalah software yang membantu pemeliharaan sistem komputer.
+Utility Software adalah software yang membantu pemeliharaan dan perawatan komputer.
 </p>
 
 <ul>
@@ -170,14 +249,13 @@ Utility Software adalah software yang membantu pemeliharaan sistem komputer.
 <li>Disk Cleanup</li>
 <li>Backup Software</li>
 <li>Defragmenter</li>
-<li>Compression Software</li>
 <li>Recovery Software</li>
 </ul>
 
 <h2>Scratch</h2>
 
 <p>
-Scratch adalah bahasa pemrograman visual berbasis blok yang memudahkan pemula belajar coding.
+Scratch adalah bahasa pemrograman visual berbasis blok yang cocok untuk pemula.
 </p>
 
 <ul>
@@ -194,7 +272,7 @@ Scratch adalah bahasa pemrograman visual berbasis blok yang memudahkan pemula be
 <h2>Sistem Operasi</h2>
 
 <p>
-Sistem Operasi adalah software yang mengatur seluruh sumber daya komputer.
+Sistem operasi adalah perangkat lunak yang mengelola seluruh sumber daya komputer.
 </p>
 
 <ul>
@@ -211,106 +289,148 @@ Sistem Operasi adalah software yang mengatur seluruh sumber daya komputer.
 
 <div class="card">
 
-<h2>QUIZ INFORMATIKA</h2>
+<h2>Quiz Informatika</h2>
 
 <form>
 
+<div class="quiz-question">
 <p>1. Hardware adalah...</p>
-<input type="radio" name="q1" value="a"> Perangkat keras
-<input type="radio" name="q1" value="b"> Program
+<label class="quiz-option"><input type="radio" name="q1" value="a">Perangkat keras</label>
+<label class="quiz-option"><input type="radio" name="q1" value="b">Program</label>
+</div>
 
+<div class="quiz-question">
 <p>2. Contoh hardware adalah...</p>
-<input type="radio" name="q2" value="a"> Keyboard
-<input type="radio" name="q2" value="b"> Windows
+<label class="quiz-option"><input type="radio" name="q2" value="a">Keyboard</label>
+<label class="quiz-option"><input type="radio" name="q2" value="b">Windows</label>
+</div>
 
+<div class="quiz-question">
 <p>3. Software adalah...</p>
-<input type="radio" name="q3" value="a"> Program
-<input type="radio" name="q3" value="b"> Monitor
+<label class="quiz-option"><input type="radio" name="q3" value="a">Program</label>
+<label class="quiz-option"><input type="radio" name="q3" value="b">Monitor</label>
+</div>
 
+<div class="quiz-question">
 <p>4. Windows termasuk...</p>
-<input type="radio" name="q4" value="a"> Software
-<input type="radio" name="q4" value="b"> Hardware
+<label class="quiz-option"><input type="radio" name="q4" value="a">Software</label>
+<label class="quiz-option"><input type="radio" name="q4" value="b">Hardware</label>
+</div>
 
+<div class="quiz-question">
 <p>5. Brainware adalah...</p>
-<input type="radio" name="q5" value="a"> Pengguna komputer
-<input type="radio" name="q5" value="b"> Mouse
+<label class="quiz-option"><input type="radio" name="q5" value="a">Pengguna komputer</label>
+<label class="quiz-option"><input type="radio" name="q5" value="b">Mouse</label>
+</div>
 
+<div class="quiz-question">
 <p>6. Programmer termasuk...</p>
-<input type="radio" name="q6" value="a"> Brainware
-<input type="radio" name="q6" value="b"> Hardware
+<label class="quiz-option"><input type="radio" name="q6" value="a">Brainware</label>
+<label class="quiz-option"><input type="radio" name="q6" value="b">Hardware</label>
+</div>
 
+<div class="quiz-question">
 <p>7. Administrator bertugas...</p>
-<input type="radio" name="q7" value="a"> Mengelola sistem
-<input type="radio" name="q7" value="b"> Menjual komputer
+<label class="quiz-option"><input type="radio" name="q7" value="a">Mengelola sistem</label>
+<label class="quiz-option"><input type="radio" name="q7" value="b">Menjual komputer</label>
+</div>
 
+<div class="quiz-question">
 <p>8. Antivirus termasuk...</p>
-<input type="radio" name="q8" value="a"> Utility Software
-<input type="radio" name="q8" value="b"> Hardware
+<label class="quiz-option"><input type="radio" name="q8" value="a">Utility Software</label>
+<label class="quiz-option"><input type="radio" name="q8" value="b">Hardware</label>
+</div>
 
+<div class="quiz-question">
 <p>9. Disk Cleanup digunakan untuk...</p>
-<input type="radio" name="q9" value="a"> Membersihkan file sampah
-<input type="radio" name="q9" value="b"> Menghapus RAM
+<label class="quiz-option"><input type="radio" name="q9" value="a">Membersihkan file sampah</label>
+<label class="quiz-option"><input type="radio" name="q9" value="b">Menghapus RAM</label>
+</div>
 
+<div class="quiz-question">
 <p>10. Backup Software digunakan untuk...</p>
-<input type="radio" name="q10" value="a"> Cadangan data
-<input type="radio" name="q10" value="b"> Mematikan komputer
+<label class="quiz-option"><input type="radio" name="q10" value="a">Cadangan data</label>
+<label class="quiz-option"><input type="radio" name="q10" value="b">Mematikan komputer</label>
+  </div>
 
-  <p>11. Scratch adalah...</p>
-<input type="radio" name="q11" value="a"> Bahasa pemrograman visual
-<input type="radio" name="q11" value="b"> Antivirus
+  <div class="quiz-question">
+<p>11. Scratch adalah...</p>
+<label class="quiz-option"><input type="radio" name="q11" value="a">Bahasa pemrograman visual</label>
+<label class="quiz-option"><input type="radio" name="q11" value="b">Antivirus</label>
+</div>
 
+<div class="quiz-question">
 <p>12. Motion digunakan untuk...</p>
-<input type="radio" name="q12" value="a"> Menggerakkan sprite
-<input type="radio" name="q12" value="b"> Memutar musik
+<label class="quiz-option"><input type="radio" name="q12" value="a">Menggerakkan sprite</label>
+<label class="quiz-option"><input type="radio" name="q12" value="b">Memutar musik</label>
+</div>
 
+<div class="quiz-question">
 <p>13. Looks digunakan untuk...</p>
-<input type="radio" name="q13" value="a"> Mengubah tampilan
-<input type="radio" name="q13" value="b"> Menghapus file
+<label class="quiz-option"><input type="radio" name="q13" value="a">Mengubah tampilan</label>
+<label class="quiz-option"><input type="radio" name="q13" value="b">Menghapus file</label>
+</div>
 
+<div class="quiz-question">
 <p>14. Events digunakan untuk...</p>
-<input type="radio" name="q14" value="a"> Menjalankan program
-<input type="radio" name="q14" value="b"> Membuat virus
+<label class="quiz-option"><input type="radio" name="q14" value="a">Menjalankan program</label>
+<label class="quiz-option"><input type="radio" name="q14" value="b">Membuat virus</label>
+</div>
 
+<div class="quiz-question">
 <p>15. Sistem Operasi adalah...</p>
-<input type="radio" name="q15" value="a"> Pengelola komputer
-<input type="radio" name="q15" value="b"> Hardware
+<label class="quiz-option"><input type="radio" name="q15" value="a">Pengelola komputer</label>
+<label class="quiz-option"><input type="radio" name="q15" value="b">Perangkat keras</label>
+</div>
 
+<div class="quiz-question">
 <p>16. Linux termasuk...</p>
-<input type="radio" name="q16" value="a"> Sistem Operasi
-<input type="radio" name="q16" value="b"> Browser
+<label class="quiz-option"><input type="radio" name="q16" value="a">Sistem Operasi</label>
+<label class="quiz-option"><input type="radio" name="q16" value="b">Browser</label>
+</div>
 
+<div class="quiz-question">
 <p>17. Android adalah...</p>
-<input type="radio" name="q17" value="a"> Mobile OS
-<input type="radio" name="q17" value="b"> Printer
+<label class="quiz-option"><input type="radio" name="q17" value="a">Mobile OS</label>
+<label class="quiz-option"><input type="radio" name="q17" value="b">Printer</label>
+</div>
 
+<div class="quiz-question">
 <p>18. macOS dibuat oleh...</p>
-<input type="radio" name="q18" value="a"> Apple
-<input type="radio" name="q18" value="b"> Canon
+<label class="quiz-option"><input type="radio" name="q18" value="a">Apple</label>
+<label class="quiz-option"><input type="radio" name="q18" value="b">Canon</label>
+</div>
 
+<div class="quiz-question">
 <p>19. Hardware memerlukan...</p>
-<input type="radio" name="q19" value="a"> Software
-<input type="radio" name="q19" value="b"> Penggaris
+<label class="quiz-option"><input type="radio" name="q19" value="a">Software</label>
+<label class="quiz-option"><input type="radio" name="q19" value="b">Penggaris</label>
+</div>
 
+<div class="quiz-question">
 <p>20. Komponen sistem komputer terdiri dari...</p>
-<input type="radio" name="q20" value="a"> Hardware Software Brainware
-<input type="radio" name="q20" value="b"> Meja Kursi Lampu
+<label class="quiz-option"><input type="radio" name="q20" value="a">Hardware, Software, Brainware</label>
+<label class="quiz-option"><input type="radio" name="q20" value="b">Meja, Kursi, Lampu</label>
+</div>
 
 <h2>Soal Isian</h2>
 
-1. Perangkat keras disebut
-<input type="text" id="i1"><br><br>
+<p>1. Perangkat keras disebut:</p>
+<input type="text" id="i1">
 
-2. Perangkat lunak disebut
-<input type="text" id="i2"><br><br>
+<p>2. Perangkat lunak disebut:</p>
+<input type="text" id="i2">
 
-3. Pengguna komputer disebut
-<input type="text" id="i3"><br><br>
+<p>3. Pengguna komputer disebut:</p>
+<input type="text" id="i3">
 
-4. Linux adalah
-<input type="text" id="i4"><br><br>
+<p>4. Linux merupakan:</p>
+<input type="text" id="i4">
 
-5. Antivirus termasuk software
-<input type="text" id="i5"><br><br>
+<p>5. Antivirus termasuk software:</p>
+<input type="text" id="i5">
+
+<br><br>
 
 <button type="button" onclick="cek()">
 Periksa Jawaban
@@ -318,7 +438,9 @@ Periksa Jawaban
 
 </form>
 
-<h2 id="hasil"></h2>
+<div id="hasil"></div>
+
+</div>
 
 </div>
 
@@ -326,30 +448,48 @@ Periksa Jawaban
 
 function cek(){
 
-let skor=0;
+let skor = 0;
 
 for(let i=1;i<=20;i++){
 
-let j=document.querySelector(
+let jawaban =
+document.querySelector(
 'input[name="q'+i+'"]:checked'
 );
 
-if(j && j.value==="a"){
+if(jawaban && jawaban.value==="a"){
 skor++;
 }
 
 }
 
-if(i1.value.toLowerCase()=="hardware") skor++;
-if(i2.value.toLowerCase()=="software") skor++;
-if(i3.value.toLowerCase()=="brainware") skor++;
-if(i4.value.toLowerCase().includes("sistem")) skor++;
-if(i5.value.toLowerCase().includes("utility")) skor++;
+if(i1.value.trim().toLowerCase()=="hardware") skor++;
+if(i2.value.trim().toLowerCase()=="software") skor++;
+if(i3.value.trim().toLowerCase()=="brainware") skor++;
+if(i4.value.trim().toLowerCase().includes("sistem")) skor++;
+if(i5.value.trim().toLowerCase().includes("utility")) skor++;
 
-let nilai=Math.round((skor/25)*100);
+let nilai = Math.round((skor/25)*100);
 
-hasil.innerHTML=
-"Skor : "+skor+"/25<br>Nilai : "+nilai;
+let predikat = "Perlu Belajar Lagi";
+
+if(nilai >= 90){
+predikat = "Sangat Baik";
+}
+else if(nilai >= 75){
+predikat = "Baik";
+}
+else if(nilai >= 60){
+predikat = "Cukup";
+}
+
+document.getElementById("hasil").innerHTML =
+`
+<h2>Hasil Quiz</h2>
+<p>Skor: ${skor} / 25</p>
+<p>Nilai: ${nilai}</p>
+<p>Predikat: ${predikat}</p>
+`;
 
 }
 
